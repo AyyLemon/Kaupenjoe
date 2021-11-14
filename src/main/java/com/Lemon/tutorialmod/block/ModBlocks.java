@@ -24,7 +24,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f)));
     public static final RegistryObject<Block> TITANIUM_ORE = registerBlock("titanium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).noCollission().instabreak()));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).
+                    noCollission().instabreak().lightLevel((state) -> 15)));
 
 
     // Method that creates new block
